@@ -2,13 +2,6 @@
 A news scraper of Maltese news articles.
 
 # Folders
-- **data**: All extracted data from the project. A file per source per year will be made available in zip format.
-- **dump**: Contains all data gathered from scraper and parser, which has not been migrated to the dataset folder.
--- **errors**: Any error log and/or response is made available here.
--- **logs**: Any log output from the scripts.
--- **processed**: The article content of links from the staging folder are dumped here, ready to be migrated to the data folder.
--- **runs**: Statistics about each run.
--- **staging**: The initial scraper would retrieve a page from a source and store the links in a csv. Said csv is saved here.
 - **notebooks**: All code wrapped in a notebook for testing is available here.
 - **setup**: Setup scripts made available here.
 
@@ -69,7 +62,7 @@ News articles are gathered from the following sources:
 - First run linksScraper.py which will gather all links from all sources. The links_scraper_history.csv will be updated with each run.
 
 # DB
-The data has been migrated to a postgreSQL DB which has dump was exported. To load a dump use
+The data has been migrated to a postgreSQL DB which dump was exported. To load a dump use
 
 ```
 psql -U postgres -h 127.0.0.1 -p 5432 -f c:\test\localnews_20230424_105945.sql
