@@ -1,0 +1,9 @@
+pip install virtualenv
+python -m venv news-venv
+.\news-venv\Scripts\activate
+.\news-venv\Scripts\python.exe -m pip install --upgrade pip
+pip install jupyter tqdm bs4 requests gitpython pandas selenium webdriver-manager shutils
+ipython kernel install --name "news-venv-kernel" --user
+pip install psycopg2 spacy dotenv
+.\news-venv\Scripts\python.exe -m spacy download en_core_web_trf
+.\news-venv\Scripts\deactivate

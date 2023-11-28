@@ -1,0 +1,5 @@
+python3 -m pip install virtualenv
+python3 -m venv news-venv
+source ./news-venv/bin/activate
+pip install tqdm bs4 requests gitpython pandas selenium webdriver-manager shutils
+source ./news-venv/bin/deactivate
